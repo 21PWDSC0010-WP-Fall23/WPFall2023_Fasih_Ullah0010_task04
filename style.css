@@ -1,0 +1,285 @@
+/* Reset some default styles for better consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header */
+    .header {
+        background-color: #8c4545;
+        border-bottom: 2px solid #333; /* Add a 2px solid border at the bottom */
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 15px 0;
+}
+
+.logo {
+    
+    font-size: 1.7rem;
+    /* padding-left: 2rem; */
+    text-align: center;
+    text-decoration: none;
+    color: #e4bb14;
+    background-color: black;
+    border-radius: 50px\;
+
+}
+
+.nav-links {
+    list-style: none;
+    text-align: center; /* Align the navigation links to the center */
+}
+ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.6rem ;
+}
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Style the landing section */
+.landing {
+    background-image: url(./images/back1.avif); /* Replace with your landing image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.landing-content {
+    background-color: rgba(176, 120, 46, 0.452);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.landing h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.landing p {
+    font-size: 1.2rem;
+}
+
+/* Style the button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.product {
+    position: relative;
+}
+
+.product .product-price {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    top: 50%; /* Position it in the middle of the container */
+    left: 50%; /* Position it in the middle of the container */
+    transform: translate(-50%, -50%); /* Center it precisely */
+    z-index: 1; /* Ensure it's above the image */
+}
+
+.product:hover .product-price {
+    display: block;
+}
+.products {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+/* Set a fixed size for product images */
+.product img {
+    width: 200px; /* Adjust this value as needed */
+    height: 200px; /* Adjust this value as needed */
+    object-fit: cover; /* Maintain the aspect ratio while filling the container */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Style the product flavor names */
+.product h3 {
+    font-size: 1.2rem;
+    color: #555;
+    
+}
+
+/* .products {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.product img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Style the product flavor names */
+/* .product h3 {
+    font-size: 1.2rem;
+    color: #555;
+} */ 
+.btn:hover {
+    background-color: #555;
+}
+.about {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style the about-box with centered paragraph */
+.about-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center the box horizontally */
+    max-width: 600px; /* Set a maximum width for the box */
+}
+
+.centered-paragraph {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* ... (previous CSS code) ... */
+
+/* Style the contact section */
+.contact {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style the contact form container */
+.contact .container {
+    max-width: 800px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+/* Style the contact form header */
+.contact h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Style the contact form paragraph */
+.contact p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Style the form input fields */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Style the message textarea */
+.form-group textarea {
+    resize: none;
+}
+
+/* Style the submit button */
+.btn-primary {
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for the submit button */
+.btn-primary:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+/* Style the footer */
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    
+}
+
+footer p {
+    margin: 0;
+}
